@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre evento:</b>
+  <%= @post.nombre_evento %>
+</p>
+
+<p>
+  <b>Descripcion:</b>
+  <%= @post.descripcion %>
+</p>
+
+<p>
+  <b>Fecha:</b>
+  <%= @post.fecha %>
+</p>
+
+<p>
+  <b>Hora:</b>
+  <%= @post.hora %>
+</p>
+
+
+<%= link_to 'Editar', edit_post_path(@post) %> |
+<%= link_to 'Volver', posts_path %>
